@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>AstroForge — Idle Space Agency</title>
+
+  <!-- PWA / Home Screen -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AstroForge" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Top resource bar -->
+    <header id="topbar">
+      <div id="agency-id">
+        <span id="agency-name">Agency</span>
+        <span id="era-badge">Era I</span>
+      </div>
+      <div id="resources"></div>
+    </header>
+
+    <!-- Main scrollable content -->
+    <main id="content"></main>
+
+    <!-- Bottom navigation -->
+    <nav id="tabbar">
+      <button class="tab-btn active" data-tab="build">🏭<span>Build</span></button>
+      <button class="tab-btn" data-tab="research">🔬<span>Research</span></button>
+      <button class="tab-btn" data-tab="missions">🚀<span>Missions</span></button>
+      <button class="tab-btn" data-tab="prestige">🌌<span>Legacy</span></button>
+      <button class="tab-btn" data-tab="ranks">🏆<span>Ranks</span></button>
+    </nav>
+  </div>
+
+  <!-- Toast / notification host -->
+  <div id="toasts"></div>
+
+  <!-- Offline progress modal -->
+  <div id="modal-host"></div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
